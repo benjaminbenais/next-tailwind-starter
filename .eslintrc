@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb",
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "comma-dangle": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "error",
+    "react/prop-types": "error",
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off"
+  }
+}
